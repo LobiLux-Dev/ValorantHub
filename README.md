@@ -1,0 +1,3 @@
+# Valodex
+
+Pokedex -> Valodex
