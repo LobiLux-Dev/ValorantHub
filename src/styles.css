@@ -1,7 +1,8 @@
 body {
   background: #32333d;
 }
-body .loader {
+
+.loader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,32 +13,31 @@ body .loader {
   height: 100vh;
   flex-direction: column;
 }
-body .loader .loading {
-  color: #ff3d43;
-}
-body .loader .spinners {
-  display: flex;
-  flex-direction: row;
-}
-body .loader .spinners .spinner-grow {
+
+.spinner-grow {
   color: #c1c1c4;
   width: 3.5rem;
   height: 3.5rem;
   margin: 0 20px;
 }
-body .card {
+
+.card {
   width: 20rem;
   padding: 0;
   background: #27272f;
   color: #c1c1c4;
 }
-body .card .card-header {
+
+.card-header {
   padding: 0;
 }
-body .card .card-body h3 {
+
+.loader > h1,
+.card-body > h3 {
   color: #ff3d43;
 }
-body .card .card-footer img {
+
+.card-footer > img {
   margin-top: -2px;
   width: 1.4rem;
 }
@@ -47,30 +47,33 @@ body .card .card-footer img {
     gap: 30px;
   }
 }
+
 @media (min-width: 576px) and (max-width: 768px) {
   .container {
     gap: 25px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 992px) {
   .container {
     gap: 20px;
   }
 }
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .container {
     gap: 15px;
   }
 }
+
 @media (min-width: 1200px) and (max-width: 1400px) {
   .container {
     gap: 10px;
   }
 }
+
 @media (min-width: 1400px) {
   .container {
     gap: 5px;
   }
 }
-
-/*# sourceMappingURL=agents.css.map */
