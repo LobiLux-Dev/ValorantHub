@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap'
 
 const CardItem = ({ background, description, displayIcon, displayName, role }) => {
 	return (
-		<Card>
+		<div className="bg-[#27272f] border border-black/[.175] rounded-md text-[#c1c1c4] w-80">
 			<Card.Header>
 				<Card.Img variant="top" alt={displayName} src={displayIcon} style={{ background: `url(${background})` }} />
 			</Card.Header>
@@ -14,7 +14,7 @@ const CardItem = ({ background, description, displayIcon, displayName, role }) =
 			<Card.Footer>
 				<img alt={role.displayName} src={role.displayIcon} /> {role.displayName}
 			</Card.Footer>
-		</Card>
+		</div>
 	)
 }
 
