@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap'
 
 const CardItem = ({ background, description, displayIcon, displayName, role }) => {
 	return (
-		<div className="bg-[#27272f] border border-black/[.175] rounded-md text-[#c1c1c4] w-80">
+		<div className="bg-[#27272f] border border-black/[.175] rounded-md text-[#c1c1c4] w-80 p-5">
 			<div className="bg-zinc-800 border-b border-black/[.175]">
 				<img src={displayIcon} alt={displayName} style={{ background: `url(${background})` }} />
 			</div>
