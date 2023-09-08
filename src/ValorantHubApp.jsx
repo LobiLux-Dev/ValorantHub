@@ -1,11 +1,13 @@
-import CardList from './components/CardList'
+import { BrowserRouter } from 'react-router-dom'
 
-const ValorantHubApp = () => {
+import { Footer, Header, Main } from './components'
+
+export const ValorantHubApp = () => {
 	return (
-		<div className="container flex flex-wrap justify-center mx-auto py-1">
-			<CardList />
-		</div>
+		<BrowserRouter>
+			<Header />
+			<Main />
+			<Footer />
+		</BrowserRouter>
 	)
 }
-
-export default ValorantHubApp

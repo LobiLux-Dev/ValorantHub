@@ -1,6 +1,6 @@
 import { Spinner } from 'react-bootstrap'
 
-const Loader = () => {
+export const Loader = () => {
 	return (
 		<div className="loader">
 			<h1 className="fw-bold">Loading...</h1>

@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
-import ValorantHubApp from './ValorantHubApp.jsx'
+import { ValorantHubApp } from './ValorantHubApp.jsx'
 
 import './styles.css'
 

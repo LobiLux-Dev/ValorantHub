@@ -1,8 +1,7 @@
 import { useFetchAgents } from '../hooks/useFetchAgents'
-import CardItem from './CardItem'
-import Loader from './Loading'
+import { CardItem, Loader } from './'
 
-const CardList = () => {
+export const CardList = () => {
 	const { agents, isLoading } = useFetchAgents()
 
 	return (
@@ -14,5 +13,3 @@ const CardList = () => {
 		</>
 	)
 }
-
-export default CardList

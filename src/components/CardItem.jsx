@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { Card } from 'react-bootstrap'
 
-const CardItem = ({ background, description, displayIcon, displayName, role }) => {
+export const CardItem = ({ background, description, displayIcon, displayName, role }) => {
 	return (
 		<div className="bg-[#27272f] border border-black/[.175] rounded-md text-[#c1c1c4] w-80 p-5">
 			<div className="bg-zinc-800 border-b border-black/[.175]">
@@ -17,8 +17,6 @@ const CardItem = ({ background, description, displayIcon, displayName, role }) =
 		</div>
 	)
 }
-
-export default CardItem
 
 CardItem.propTypes = {
 	background: PropTypes.string.isRequired,
