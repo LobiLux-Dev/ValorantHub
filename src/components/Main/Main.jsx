@@ -1,4 +1,4 @@
-import { CardList } from './'
+import { CardList } from '..'
 
 export const Main = () => (
 	<main>

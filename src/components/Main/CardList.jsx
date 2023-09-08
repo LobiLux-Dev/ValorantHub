@@ -1,4 +1,4 @@
-import { useFetchAgents } from '../hooks/useFetchAgents'
+import { useFetchAgents } from '../../hooks'
 import { CardItem, Loader } from './'
 
 export const CardList = () => {

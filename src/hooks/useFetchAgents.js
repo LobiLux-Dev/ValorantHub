@@ -1,21 +1,21 @@
 import { useEffect, useState } from 'react'
 
-import { fetchAgents } from '../helpers/fetchAgents'
+import { fetchAgents } from '../helpers'
 
 export const useFetchAgents = () => {
-  const [agents, setAgents] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
+	const [agents, setAgents] = useState([])
+	const [isLoading, setIsLoading] = useState(true)
 
-  const getAgents = async () => {
-    const newAgents = await fetchAgents()
+	const getAgents = async () => {
+		const newAgents = await fetchAgents()
 
-    setAgents(newAgents)
-    setIsLoading(false)
-  }
+		setAgents(newAgents)
+		setIsLoading(false)
+	}
 
-  useEffect(() => {
-    getAgents()
-  }, [])
+	useEffect(() => {
+		getAgents()
+	}, [])
 
-  return { agents, isLoading }
+	return { agents, isLoading }
 }
