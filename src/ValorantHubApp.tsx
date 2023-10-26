@@ -1,13 +1,16 @@
 import { BrowserRouter } from 'react-router-dom'
+import { ChakraProvider } from '@chakra-ui/react'
 
 import { Footer, Header, Main } from './components'
 
 export const ValorantHubApp = () => {
 	return (
-		<BrowserRouter>
-			<Header />
-			<Main />
-			<Footer />
-		</BrowserRouter>
+		<ChakraProvider>
+			<BrowserRouter>
+				<Header />
+				<Main />
+				<Footer />
+			</BrowserRouter>
+		</ChakraProvider>
 	)
 }
