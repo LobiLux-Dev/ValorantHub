@@ -7,7 +7,7 @@ const config: Config = {
 	daisyui: {
 		themes: [
 			{
-				mytheme: {
+				dark: {
 					primary: '#FF3540',
 					secondary: '#A0A0A5',
 					accent: '#0D0D13',
@@ -16,6 +16,17 @@ const config: Config = {
 					info: '#3498db',
 					success: '#43A047',
 					warning: '#FFB300',
+					error: '#E74C3C',
+				},
+				light: {
+					primary: '#FF6572',
+					secondary: '#D8D8DC',
+					accent: '#1E1E24',
+					neutral: '#A4A4AA',
+					'base-100': '#FFFFFF',
+					info: '#3498db',
+					success: '#4CAF50',
+					warning: '#FFC107',
 					error: '#E74C3C',
 				},
 			},
