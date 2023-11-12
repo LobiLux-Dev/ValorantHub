@@ -8,23 +8,23 @@ const config: Config = {
 		themes: [
 			{
 				mytheme: {
-					primary: '#ff3d43',
-					secondary: '#c1c1c4',
-					accent: '#27272f',
-					neutral: '#8e8e93',
-					'base-100': '#32333d',
+					primary: '#FF3540',
+					secondary: '#A0A0A5',
+					accent: '#0D0D13',
+					neutral: '#64646A',
+					'base-100': '#1F1F29',
 					info: '#3498db',
-					success: '#27ae60',
-					warning: '#f39c12',
-					error: '#e74c3c',
+					success: '#43A047',
+					warning: '#FFB300',
+					error: '#E74C3C',
 				},
 			},
 		],
 	},
+	plugins: [DaisyUI],
 	theme: {
 		extend: {},
 	},
-	plugins: [DaisyUI],
 }
 
 export default config
