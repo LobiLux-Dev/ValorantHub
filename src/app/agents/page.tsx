@@ -22,12 +22,12 @@ const AgentsPage = async () => {
 						width={256}
 					/>
 					<div className="card-body">
-						<h3 className="card-title text-primary font-bold">{displayName}</h3>
-						<p className="text-secondary selection:text-accent selection:bg-info/[.6]">{description}</p>
+						<h3 className="card-title font-bold text-primary">{displayName}</h3>
+						<p className="text-secondary selection:bg-info/[.6] selection:text-accent">{description}</p>
 						<div className="divider m-0"></div>
 						<div className="flex gap-2">
 							<Image alt={role.displayName} height={24} src={role.displayIcon} width={24} />
-							<h5 className="text-info font-semibold">{role.displayName}</h5>
+							<h5 className="font-semibold text-info">{role.displayName}</h5>
 						</div>
 					</div>
 				</div>
